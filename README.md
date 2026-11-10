@@ -1,4 +1,4 @@
-# time-series-bootstrap-simulations
+
 # Resampling for Dependent Data: Moving Block Bootstrap vs. i.i.d. Resampling in AR(1) Processes
 
 A first-principles Python/NumPy simulation investigating the breakdown of Efron's standard i.i.d. bootstrap under temporal serial dependence, and empirical recovery via the Moving Block Bootstrap (MBB).
@@ -11,4 +11,4 @@ $$\sigma_{\text{LR}}^2 = \sigma^2 \frac{1+\rho}{1-\rho} \approx 5.67 \times \sig
 - **Moving Block Bootstrap (MBB):** Resamples contiguous overlapping blocks of size $b = 10$, preserving the short-range autocorrelation structure within each block and restoring empirical coverage to **87.0%**.
 
 ## Diagnostic Results
-![Bootstrap Diagnostics](Screenshot 2026-11-10 202947.png)
+![Bootstrap Diagnostics](bootstrap_time_series_diagnostics.png)
